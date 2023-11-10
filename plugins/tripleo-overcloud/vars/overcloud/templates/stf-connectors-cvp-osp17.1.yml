@@ -13,7 +13,7 @@ custom_templates:
     ContainerHealthCheckDisabled: false
     CollectdSensubilityLogLevel: DEBUG
     CollectdSensubilityTransport: amqp1
-    CollectdSensubilityResultsChannel: sensubility/osp17-telemetry
+    CollectdSensubilityResultsChannel: sensubility/cloud1-telemetry
     CeilometerQdrEventsConfig:
       driver: amqp
       topic: cloud1-event
@@ -27,11 +27,11 @@ custom_templates:
         skipverifyhost: 'on'
         uid: elastic
     CollectdAmqpInstances:
-      osp17-notify:
+      cloud1-notify:
         format: JSON
         notify: true
         presettle: false
-      osp17-telemetry:
+      cloud1-telemetry:
         format: JSON
         presettle: false
     MetricsQdrAddresses:
